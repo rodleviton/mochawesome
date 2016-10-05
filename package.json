@@ -3,7 +3,10 @@
   "version": "1.5.2",
   "description": "A Gorgeous HTML/CSS Reporter for Mocha.js",
   "scripts": {
-    "test": "gulp build"
+    "build": "gulp build",
+    "test": "mocha test/basic/test.js --reporter mochawesome --reporter-options reportName=index,reportDir=reports",
+    "serve": "http-server ./reports -p 3002 -o",
+    "start": "npm-run-all build test serve"
   },
   "author": "Adam Gruber",
   "license": "MIT",
@@ -32,11 +35,9 @@
     "node-uuid": "^1.4.1",
     "opener": "^1.4.1"
   },
-  "peerDependencies": {
-    "mocha": "*"
-  },
   "devDependencies": {
     "bootstrap": "^3.3.2",
+    "chai": "^3.5.0",
     "chart.js": "^1.0.1",
     "fiveby": "^1.0.0",
     "gulp": "^3.8.1",
@@ -52,10 +53,16 @@
     "gulp-util": "^3.0.2",
     "gulp-watch": "^4.1.0",
     "gulp-wrap": "^0.10.1",
+    "http-server": "^0.9.0",
+    "istanbul": "^0.3.22",
     "jquery": "^2.1.3",
     "jshint-stylish": "^1.0.0",
     "merge-stream": "^0.1.7",
-    "mocha": "~2",
-    "should": "^3.3.2"
+    "mocha": "^2.5.3",
+    "npm-run-all": "^3.1.0",
+    "should": "^3.3.2",
+    "stream-browserify": "^2.0.1",
+    "superagent": "^2.3.0",
+    "superagent-proxy": "^1.0.1"
   }
 }

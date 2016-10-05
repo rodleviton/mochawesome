@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>API Test Report</title>
+    
+    <link rel="stylesheet" href="css/mochawesome.css">
+  </head>
+  <body>
+
+    <!-- NAVBAR -->
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="report-info-cnt">
+          <h1 class="report-title">API Test Suite</h1>
+          <h3 class="report-date">Wednesday, October 5 2016, 09:23pm</h3>
+        </div>
+        <div class="nav-right">
+          <div class="quick-summary-cnt">
+              <ul class="list-unstyled quick-summary">
+                <li class="qs-item summary-duration" title="Duration">275<span>MS</span></li>
+                <li class="qs-item summary-suites" title="Suites">3</li>
+                <li class="qs-item summary-tests" title="Tests">4</li>
+                <li class="qs-item summary-passes" title="Passed" data-filter="passed">4</li>
+                <li class="qs-item summary-failures" title="Failed" data-filter="failed">0</li>
+                <li class="qs-item summary-pending" title="Pending" data-filter="pending">0</li>
+              </ul>          </div>
+          <button class="nav-menu-btn open-menu"><i class="icon-menu"></i></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Report Summary -->
+    <div class="summary">
+      <div class="container">
+          <div class="row">
+            <div class="summary-col summary-duration">
+              <h1 class="summary-count">275<span>MS</span></h1>
+              <h4 class="summary-label">MS</h4>
+            </div>
+            <div class="summary-col summary-suites" title="Suites">
+              <h1 class="summary-count">3</h1>
+              <h4 class="summary-label">Suites</h4>
+            </div>
+            <div class="summary-col summary-tests" title="Tests">
+              <h1 class="summary-count">4</h1>
+              <h4 class="summary-label">Tests</h4>
+            </div>
+            <div class="summary-col summary-passes" data-filter="passed" title="Passed">
+              <h1 class="summary-count">4</h1>
+              <h4 class="summary-label">Passed</h4>
+            </div>
+            <div class="summary-col summary-failures" data-filter="failed" title="Failed">
+              <h1 class="summary-count">0</h1>
+              <h4 class="summary-label">Failed</h4>
+            </div>
+            <div class="summary-col summary-pending" data-filter="pending" title="Pending">
+              <h1 class="summary-count">0</h1>
+              <h4 class="summary-label">Pending</h4>
+            </div>
+          </div>      </div>
+    </div>
+    <div class="statusbar">
+      <div class="container">
+          <div class="row">
+            <div class="status-item status-item-pending-pct">0% Pending</div>
+            <div class="status-item status-item-passing-pct success">100% Passing</div>
+          </div>      </div>
+    </div>
+
+    <!-- Suites -->
+    <div class="details container">
+            <section class="suite-wrap">
+          <div id="479b3731-5ba2-4aa7-9a69-9dee675b02cf" class="suite has-suites">
+            <h3 class="suite-title">API Test Suite</h3>
+            <h5 class="suite-filename">/test/basic/test.js</h5>
+        
+              <section class="suite-wrap">
+          <div id="0fca212f-c236-4f61-8ea3-c23ab7f99a1b" class="suite has-tests has-passed">
+            <h3 class="suite-title">Get Posts</h3>
+            <h5 class="suite-filename">/test/basic/test.js</h5>
+            <!-- Suite Chart -->
+            <div class="suite-chart-wrap">
+              <canvas id="0fca212f-c236-4f61-8ea3-c23ab7f99a1b" class="suite-chart" width="50" height="50" data-total-passes="2" data-total-failures="0" data-total-pending="0" data-total-skipped="0"></canvas>
+            </div>
+            <div class="suite-data-wrap">
+              <!-- Suite Summary -->
+              <ul class="suite-summary list-unstyled">
+                <li class="suite-summary-item duration">123 ms</li>
+                <li class="suite-summary-item tests">2</li>
+                <li class="suite-summary-item passed">2</li>
+                <li class="suite-summary-item failed">0</li>
+                <li class="suite-summary-item pending">0</li>
+              </ul>
+              <!-- Test Info -->
+              <div class="suite-test-wrap">
+                <div class="suite-test-header" data-toggle="collapse" data-target="#0fca212f-c236-4f61-8ea3-c23ab7f99a1b-test-list">
+                  <h4 class="suite-test-header-title">Tests</h4>
+                </div>
+                <div id="0fca212f-c236-4f61-8ea3-c23ab7f99a1b-test-list" class="list-group test-list collapse in">
+                    <div id="3cfe76ae-51e9-4f3b-8a1a-dab9d32b4024" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              should return a status of 200
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#3cfe76ae-51e9-4f3b-8a1a-dab9d32b4024 > .test-code.collapse">Code</button>
+              <span class="test-duration medium">68 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">request.get(<span class="hljs-string">'http://jsonplaceholder.typicode.com/posts'</span>)<br><span class="hljs-comment">// .proxy(proxy)</span><br>  .end(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">err, res</span>) </span>{<br>    expect(res.status).to.equal(<span class="hljs-number">200</span>);<br>    done();<br>  });</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>            <div id="08efc830-63f7-4603-adf1-197696b555ab" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              should return a valid payload
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#08efc830-63f7-4603-adf1-197696b555ab > .test-code.collapse">Code</button>
+              <span class="test-duration medium">55 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">request.get(<span class="hljs-string">'http://jsonplaceholder.typicode.com/posts'</span>)<br><span class="hljs-comment">// .proxy(proxy)</span><br>  .end(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">err, res</span>) </span>{<br>    expect(res).to.exist;<br>    done();<br>  });</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>        </div>
+              </div>
+            </div>
+        
+        
+          </div>
+        </section>
+              <section class="suite-wrap">
+          <div id="d607c1e0-5318-4dbb-a595-fdad9716f133" class="suite has-tests has-passed">
+            <h3 class="suite-title">Get User</h3>
+            <h5 class="suite-filename">/test/basic/test.js</h5>
+            <!-- Suite Chart -->
+            <div class="suite-chart-wrap">
+              <canvas id="d607c1e0-5318-4dbb-a595-fdad9716f133" class="suite-chart" width="50" height="50" data-total-passes="2" data-total-failures="0" data-total-pending="0" data-total-skipped="0"></canvas>
+            </div>
+            <div class="suite-data-wrap">
+              <!-- Suite Summary -->
+              <ul class="suite-summary list-unstyled">
+                <li class="suite-summary-item duration">142 ms</li>
+                <li class="suite-summary-item tests">2</li>
+                <li class="suite-summary-item passed">2</li>
+                <li class="suite-summary-item failed">0</li>
+                <li class="suite-summary-item pending">0</li>
+              </ul>
+              <!-- Test Info -->
+              <div class="suite-test-wrap">
+                <div class="suite-test-header" data-toggle="collapse" data-target="#d607c1e0-5318-4dbb-a595-fdad9716f133-test-list">
+                  <h4 class="suite-test-header-title">Tests</h4>
+                </div>
+                <div id="d607c1e0-5318-4dbb-a595-fdad9716f133-test-list" class="list-group test-list collapse in">
+                    <div id="b7911452-1a36-436a-be5a-0a978d21f6dd" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              should return a status of 200
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#b7911452-1a36-436a-be5a-0a978d21f6dd > .test-code.collapse">Code</button>
+              <span class="test-duration slow">91 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">request.get(<span class="hljs-string">'http://jsonplaceholder.typicode.com/posts?userId=1'</span>)<br><span class="hljs-comment">// .proxy(proxy)</span><br>  .end(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">err, res</span>) </span>{<br>    expect(res).to.exist;<br>    expect(res.status).to.equal(<span class="hljs-number">200</span>);<br>    <span class="hljs-built_in">console</span>.log(res);<br>    done();<br>  });</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>            <div id="34fc1e2b-fb82-4889-a84e-1a2d491e6f85" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              should return a valid payload
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#34fc1e2b-fb82-4889-a84e-1a2d491e6f85 > .test-code.collapse">Code</button>
+              <span class="test-duration medium">51 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">request.get(<span class="hljs-string">'http://jsonplaceholder.typicode.com/posts?userId=1'</span>)<br><span class="hljs-comment">// .proxy(proxy)</span><br>  .end(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">err, res</span>) </span>{<br>    expect(res).to.exist;<br>    done();<br>  });</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>        </div>
+              </div>
+            </div>
+        
+        
+          </div>
+        </section>
+        
+          </div>
+        </section>
+    </div>
+
+    <footer>
+      <div class="container"></div>
+    </footer>
+
+    <!-- Nav Menu -->
+    <div class="nav-menu-wrap">
+      <div class="menu-overlay close-menu"></div>
+      <nav class="menu">
+        <button class="nav-menu-btn close-menu"><i class="icon-failed"></i></button>
+        <ul class="list-unstyled main-menu">
+                <li class="nav-menu-item">
+                <a href="#479b3731-5ba2-4aa7-9a69-9dee675b02cf" class="nav-menu-item-link">API Test Suite</a>
+                  <ul class="list-unstyled sub-menu">
+                    <li class="nav-menu-item">
+                <a href="#0fca212f-c236-4f61-8ea3-c23ab7f99a1b" class="nav-menu-item-link has-passes">Get Posts</a>
+            </li>
+                  </ul>
+                  <ul class="list-unstyled sub-menu">
+                    <li class="nav-menu-item">
+                <a href="#d607c1e0-5318-4dbb-a595-fdad9716f133" class="nav-menu-item-link has-passes">Get User</a>
+            </li>
+                  </ul>
+            </li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/vendor.js"></script>
+    <script src="js/mochawesome.js"></script>
+  </body>
+</html>
